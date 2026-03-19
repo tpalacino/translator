@@ -1,0 +1,19 @@
+{
+    "name": "translator",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "translator",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "editorconfig.editorconfig"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/cirolosapio/devcontainers-features/alpine-git:0": {}
+    }
+}

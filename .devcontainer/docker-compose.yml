@@ -1,0 +1,18 @@
+name: Translator
+services:
+    translator:
+        container_name: translator
+        image: node:24-alpine
+        volumes:
+            - local-workspace:/workspace:cached
+            - node_modules:/workspace/node_modules
+        command: 'sleep infinity'
+
+volumes:
+    node_modules:
+    local-workspace:
+        driver: local
+        driver_opts:
+            type: none
+            o: bind
+            device: ../

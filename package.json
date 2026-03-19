@@ -1,0 +1,19 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretranslate": "npm i",
+    "translate": "node translator.js -f ./input.txt -t bg-bg,cs-cz,da-dk,de-de,en-gb,es-es,fr-fr,hi-in,hu-hu,id-id,it-it,ja-jp,ko-kr,nl-nl,pt-br,pt-pt,sv-se,th-th,uk-ua,vi-vn,zh-cn,zh-tw"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@cloudwell/process-args": "^1.0.1",
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1"
+  }
+}
